@@ -1,0 +1,63 @@
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+numlock-state='on'
+
+[/]
+panel-edit-mode=false
+enabled-applets=['panel1:right:3:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:1:show-desktop@cinnamon.org:2', 'panel1:left:2:grouped-window-list@cinnamon.org:3', 'panel1:right:4:keyboard@cinnamon.org:4', 'panel1:right:5:notifications@cinnamon.org:5', 'panel1:right:6:removable-drives@cinnamon.org:6', 'panel1:right:8:bluetooth@cinnamon.org:7', 'panel1:right:9:network@cinnamon.org:8', 'panel1:right:10:sound@cinnamon.org:9', 'panel1:right:11:power@cinnamon.org:10', 'panel1:right:12:calendar@cinnamon.org:11', 'panel1:right:2:hwmonitor@sylfurd:12', 'panel1:right:0:weather@mockturtl:14']
+next-applet-id=15
+panel-zone-icon-sizes='[{"panelId": 1, "left": -1, "center": 0, "right": 0}]'
+panels-height=['1:31']
+applet-cache-updated=1548635470
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>d']
+command='dmenu_run'
+name='dmenu'
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>Return']
+command='xfce4-terminal'
+name='Terminal'
+
+[desktop/keybindings]
+custom-list=['custom0', 'custom1']
+show-desklets=@as []
+
+[desktop/keybindings/wm]
+push-tile-left=['<Super>Left']
+maximize=['<Super>w']
+show-desktop=['<Super>s']
+push-tile-right=['<Super>Right']
+
+[desktop/background]
+picture-uri='file:///usr/share/backgrounds/linuxmint-tessa/aruban_pitsunda.jpg'
+picture-options='zoom'
+
+[desktop/background/slideshow]
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-tessa.xml'
+random-order=true
+delay=30
+slideshow-enabled=true
+
+[desktop/interface]
+cursor-blink-time=1200
+toolkit-accessibility=false
+
+[desktop/sound]
+event-sounds=false
+
+[theme]
+symbolic-relative-size=0.67000000000000004
