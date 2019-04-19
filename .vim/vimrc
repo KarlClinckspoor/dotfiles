@@ -1,0 +1,36 @@
+set number
+set relativenumber
+
+filetype indent plugin on
+syntax on
+
+set wildmenu
+set hlsearch
+nnoremap <C-L> :nohl<CR><C-L>
+
+set visualbell
+set confirm
+
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set nocompatible             
+filetype off                  
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'tpope/vim-sensible'    
+Plugin 'junegunn/seoul256.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+let g:seoul256_background = 233 " 233 (darkest) - 239 (lightest)
+colo seoul256

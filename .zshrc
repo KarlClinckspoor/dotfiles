@@ -98,8 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+# Find out why LM keeps setting vim to /alternatives/vim, and sets vim to
+# vim.basic
+alias vim='vim.basic'
+
 
 # texlive
 #PATH=$PATH:/home/karl/texlive/2018/bin/x86-64-linux
 export PATH=/home/karl/texlive/2018/bin/x86_64-linux:$PATH
 export PATH=/home/karl/anaconda3/bin:$PATH
+export PATH=$PATH:/snap/bin
