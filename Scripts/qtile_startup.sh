@@ -6,4 +6,5 @@ TAPPING="$(xinput list-props $TOUCHID | grep -m 1 -E 'Tapping Enabled' | awk '{p
 xinput set-prop $TOUCHID $NATURALSCROLL 1 &
 xinput set-prop $TOUCHID $TAPPING 1 &
 feh --randomize --bg-fill --recursive /usr/share/backgrounds &
-dropbox start
+dropbox start &
+#compton --config ~/.config/compton/compton.conf

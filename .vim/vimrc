@@ -6,10 +6,20 @@ syntax on
 
 set wildmenu
 set hlsearch
-nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <C-Y> :nohl<CR><C-Y> " remove highlight with C-Y
+
+" Easier nagivation between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" More natural split locations
+set splitbelow
+set splitright
 
 set visualbell
-set confirm
+set confirm " Asks to save instead of complaining
 
 set shiftwidth=4
 set softtabstop=4
@@ -26,6 +36,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-sensible'    
 Plugin 'junegunn/seoul256.vim'
+Plugin 'davidhalter/jedi-vim'
+"Plugin 'ambv/black'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
