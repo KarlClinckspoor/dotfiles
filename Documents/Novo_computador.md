@@ -65,6 +65,9 @@ Etapas feitas ao reinstalar o Linux Mint
 		* `sudo apt-get install openvpn`
 		* `sudo apt-get install network-manager-openvpn-gnome`
 		* `sudo apt install resolvconf`
+		* Ir para Account, OpenVPN/IKEv2 Username
+			* Wa7ZxFYgrx3gSwqeOr07ETrY
+			* mw98fuuZXN8meJ9My/Oy/FTy
 		* Clicar na barra da conexão, Editar conexão, adicionar uma conexão importando uma configuração de VPN.
 		* Pela linha de comando: `sudo openvpn <config.ovpn>`, colocar o username e a senha.
 		* O site http://ipleak.net/ fala se a conexão está segura.
@@ -77,6 +80,14 @@ Etapas feitas ao reinstalar o Linux Mint
 	    * Descompactar o arquivo com `tar -xvf install-tl-unx.tar.gz`
 	    * Rodar o `./install-tl`. Melhor alterar o caminho de instalação para uma pasta com permissão de escrita.
 	    * Depois de terminar, adicionar o caminho dos binários para PATH.
+
+        * ODrive:
+            1. git clone https://github.com/liberodark/ODrive
+            2. sudo apt install libgconf-2-4
+            3. sudo apt install npm
+            4. npm install
+            5. npm start
+
 
 Outras coisas que podem ser feitas:
 
@@ -98,3 +109,16 @@ Outras coisas que podem ser feitas:
 	5. Fazer um `config checkout`. Se der erros de arquivos já existentes, mover eles para algum lugar, e rodar novamente.
 	6. Pedir novamente para não mostrar untracked. 
 
+* Zotero
+	* Fazer o login para fazer o scan
+	* Instalar os addons:
+		1. Better BibTex for Zotero: https://retorque.re/zotero-better-bibtex/
+		2. Markdown Here
+		3. ZotFile: http://zotfile.com/
+		4. Zutilo Utility for Zotero: https://github.com/willsALMANJ/Zutilo
+
+
+Tarefas:
+
+1. Revisar a ordem desses itens
+2. Transformar isso num script, se possível
