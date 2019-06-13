@@ -45,4 +45,4 @@ filetype plugin indent on    " required
 "filetype plugin on
 
 let g:seoul256_background = 233 " 233 (darkest) - 239 (lightest)
-colo seoul256
+colo seoul256-light

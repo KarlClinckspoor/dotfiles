@@ -5,10 +5,19 @@ panels-show-delay=['1:0', '2:0']
 panels-hide-delay=['1:0', '2:0']
 panel-edit-mode=false
 enabled-applets=['panel1:right:4:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:1:show-desktop@cinnamon.org:2', 'panel1:left:2:grouped-window-list@cinnamon.org:3', 'panel1:right:5:keyboard@cinnamon.org:4', 'panel1:right:6:notifications@cinnamon.org:5', 'panel1:right:7:removable-drives@cinnamon.org:6', 'panel1:right:8:network@cinnamon.org:8', 'panel1:right:9:sound@cinnamon.org:9', 'panel1:right:10:power@cinnamon.org:10', 'panel1:right:11:calendar@cinnamon.org:11', 'panel1:right:3:hwmonitor@sylfurd:12', 'panel1:right:1:weather@mockturtl:14', 'panel2:left:0:menu@cinnamon.org:15', 'panel2:left:1:show-desktop@cinnamon.org:16', 'panel2:left:2:grouped-window-list@cinnamon.org:17', 'panel2:right:4:keyboard@cinnamon.org:18', 'panel2:right:6:removable-drives@cinnamon.org:19', 'panel2:right:12:calendar@cinnamon.org:20', 'panel1:right:0:workspace-switcher@cinnamon.org:22']
+workspace-osd-x=50
+workspace-osd-y=50
 next-applet-id=23
 panel-zone-icon-sizes='[{"panelId":1,"left":-1,"center":0,"right":0},{"panelId":2,"left":0,"center":0,"right":0}]'
+workspace-osd-duration=400
 panels-enabled=['1:0:bottom', '2:1:bottom']
 applet-cache-updated=1560256731
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=false
+
+[settings-daemon/peripherals/touchpad]
+touchpad-enabled=true
 
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
@@ -18,6 +27,27 @@ numlock-state='on'
 [desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
+
+[desktop/a11y/keyboard]
+slowkeys-beep-press=true
+mousekeys-accel-time=1200
+bouncekeys-beep-reject=true
+slowkeys-beep-reject=false
+disable-timeout=120
+enable=false
+bouncekeys-enable=false
+stickykeys-enable=false
+feature-state-change-beep=false
+slowkeys-beep-accept=true
+bouncekeys-delay=300
+mousekeys-max-speed=750
+mousekeys-enable=false
+timeout-enable=false
+slowkeys-delay=300
+stickykeys-modifier-beep=true
+stickykeys-two-key-off=true
+mousekeys-init-delay=160
+slowkeys-enable=false
 
 [desktop/a11y/mouse]
 secondary-click-enabled=false
@@ -41,27 +71,38 @@ custom-list=['custom0', 'custom1']
 show-desklets=@as []
 
 [desktop/keybindings/wm]
-push-tile-left=['<Super>Left']
 maximize=['<Super>w']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
 show-desktop=['<Super>s']
+push-tile-left=['<Super>Left']
 push-tile-right=['<Super>Right']
 
 [desktop/background]
-picture-uri='file:///usr/share/backgrounds/linuxmint-tessa/ghiles_portree.jpg'
+picture-uri='file:///usr/share/backgrounds/linuxmint-tessa/skunze_mallorca.jpg'
 picture-options='zoom'
 
 [desktop/background/slideshow]
 image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-tessa.xml'
 random-order=true
 delay=30
-slideshow-enabled=true
+slideshow-enabled=false
 
 [desktop/interface]
 cursor-blink-time=1200
+icon-theme='Mint-Y-Blue'
+gtk-theme='Mint-Y-Blue'
 toolkit-accessibility=false
 
 [desktop/sound]
 event-sounds=false
 
+[desktop/wm/preferences]
+theme='Mint-Y'
+
 [theme]
 symbolic-relative-size=0.67000000000000004
+theme-cache-updated=1560257359
+name='Mint-Y-Blue'
