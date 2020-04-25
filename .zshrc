@@ -97,17 +97,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Find out why LM keeps setting vim to /alternatives/vim, and sets vim to
 # vim.basic
 alias vim='vim.basic'
-
-export PATH=/home/karl/texlive/2019/bin/x86_64-linux:$PATH
-export PATH=/home/karl/anaconda3/bin:$PATH
-export PATH=$PATH:/home/karl/Zotero_linux-x86_64
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/karl/go/bin
 #export GOPATH=$HOME/gopath
 #export PATH=$GOPATH:$GOPATH/bin:$PATH
 powerline-daemon -q
-. /home/karl/.local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. /home/karl/anaconda3/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
