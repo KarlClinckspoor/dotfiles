@@ -102,6 +102,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Find out why LM keeps setting vim to /alternatives/vim, and sets vim to
 # vim.basic
 alias vim='vim.basic'
+alias emacs='emacsclient -create-frame --alternate-editor=""'
 #export GOPATH=$HOME/gopath
 #export PATH=$GOPATH:$GOPATH/bin:$PATH
 powerline-daemon -q
