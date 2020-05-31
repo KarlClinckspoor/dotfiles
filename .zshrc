@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/karl/.oh-my-zsh"
+export ZSH="/home/manjaro/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -26,8 +26,14 @@
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -62,12 +68,9 @@
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    virtualenv
-    python
+plugins=(git
     compleat
-    zsh-autosuggestions
+zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,16 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-# Find out why LM keeps setting vim to /alternatives/vim, and sets vim to
-# vim.basic
-alias vim='vim.basic'
-
-export PATH=/home/karl/texlive/2019/bin/x86_64-linux:$PATH
-export PATH=/home/karl/anaconda3/bin:$PATH
-export PATH=$PATH:/home/karl/Zotero_linux-x86_64
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/karl/go/bin
-#export GOPATH=$HOME/gopath
-#export PATH=$GOPATH:$GOPATH/bin:$PATH
 powerline-daemon -q
-. /home/karl/.local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. /home/manjaro/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh 
