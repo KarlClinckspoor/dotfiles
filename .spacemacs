@@ -491,7 +491,14 @@ before packages are loaded."
 (spacemacs/declare-prefix "o" "own-menu")
 (spacemacs/set-leader-keys "os" 'org-save-all-org-buffers)
 (spacemacs/set-leader-keys "oi" 'helm-org-agenda-files-headings)
+(spacemacs/set-leader-keys "oe" 'TeX-next-error)
 
+;; (setq-default TeX-master "main")
+;; (setf (nth 1 (assoc "XeLaTeX" TeX-command-list))
+;;       "%`%l -interaction=nonstopmode %(mode)%' %t")
+(eval-after-load "tex"
+  '(add-to-list 'TeX-command-list
+                '("xelatex" "xelatex -interaction=nonstopmode -shell-escape %s" TeX-run-command t t :help "Run xelatex") t))
 ;; (lsp-register-client
 ;;  (make-lsp-client :new-connection (lsp-tramp-connection "binary-or-full-path")
 ;;                   :major-modes '(python-mode)
@@ -604,3 +611,17 @@ This function is called at the very end of Spacemacs initialization."
  )
 )
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yapfify ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline smeargle restart-emacs rainbow-delimiters pyvenv pytest pyenv-mode py-isort popwin pip-requirements persp-mode pdf-tools tablist pcre2el paradox spinner orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-plus-contrib org-mime org-download org-bullets open-junk-file neotree move-text magit-gitflow magit-popup macrostep lorem-ipsum live-py-mode linum-relative link-hint indent-guide hydra lv hy-mode dash-functional hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-pydoc helm-projectile projectile helm-mode-manager helm-make helm-gitignore request helm-flx helm-descbinds helm-ag google-translate golden-ratio gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter flycheck-pos-tip pos-tip flycheck pkg-info epl flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit magit git-commit with-editor transient evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump diminish diff-hl define-word cython-mode column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed auctex anaconda-mode pythonic f dash s aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

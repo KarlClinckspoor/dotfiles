@@ -100,6 +100,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 powerline-daemon -q
 . /home/manjaro/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh 
+# Find out why LM keeps setting vim to /alternatives/vim, and sets vim to
+# vim.basic
+alias vim='vim.basic'
+# alias emacs='emacsclient -create-frame --alternate-editor=""'
+#export GOPATH=$HOME/gopath
+#export PATH=$GOPATH:$GOPATH/bin:$PATH
+powerline-daemon -q
+#. /home/karl/anaconda3/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
