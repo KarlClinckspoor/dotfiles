@@ -52,8 +52,6 @@ Etapas feitas ao reinstalar o Linux Mint
 		* Adicionar após o anaconda
 			* `powerline-daemon -q`
 			* `. /home/karl/anaconda3/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh`
-	* SpaceVim:
-		* `curl -sLf https://spacevim.org/install.sh | bash`
 	* SublimeText:
 		* `wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -`
 		* `sudo apt-get install apt-transport-https`
@@ -117,8 +115,11 @@ Outras coisas que podem ser feitas:
 		3. ZotFile: http://zotfile.com/
 		4. Zutilo Utility for Zotero: https://github.com/willsALMANJ/Zutilo
 
+https://github.com/pyenv/pyenv#installation
+chemacs,Spacemacs, doom emacs
 
 Tarefas:
 
 1. Revisar a ordem desses itens
 2. Transformar isso num script, se possível
+
