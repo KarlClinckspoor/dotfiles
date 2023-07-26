@@ -1,0 +1,47 @@
+set ignorecase
+set smartcase
+set incsearch
+
+set backspace=eol,start,indent
+set nostartofline
+set hlsearch
+set autoindent
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set clipboard=unnamed
+
+set scrolloff=5
+
+map Q gq
+
+set showcmd
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+nnoremap Y y$
+
+"Visual studio specific
+"Ctrl+Alt+A To open Command window and see which commands are available.
+
+"Window related
+nnoremap <Leader>ss :vsc Window.Split<cr> "Also used to unsplit. Only goes horizontally.
+nnoremap <Leader>sn :vsc Window.NextSplitPane<cr> "Effectively the same as Previous, since there's only 2 at most
+nnoremap <Leader>sp :vsc Window.PreviousSplitPane<cr>
+
+nnoremap <Leader>tc :vsc Window.CloseDocumentWindow<cr>
+nnoremap <Leader>tn :vsc Window.NextTab<cr>
+nnoremap <Leader>tp :vsc Window.PreviousTab<cr>
+nnoremap <Leader>tr :vsc Window.RestoreClosedTab<cr>
+
+"Comment related
+xnoremap gc :vsc Edit.ToggleLineComment<cr>
+
+"Navigation related
+nnoremap gr :vsc Edit.FindAllReferences<cr>
+
+"Debug related
+nnoremap <Leader>db :vsc Debug.ToggleBreakPoint<cr>
+nnoremap <Leader>dd :vsc Debug.Start<cr>

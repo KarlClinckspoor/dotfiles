@@ -1,0 +1,73 @@
+let mapleader=" "
+        
+""" Packages
+set easymotion
+set surround "ok
+set argtextobj "ok
+    let g:argtextobj_pairs="(:),{:},<:>"
+set highlightedyank
+    let g:highlightedyank_highlight_duration = "1000"
+    let g:highlightedyank_highlight_color = "rgba(160, 160, 160, 155)"
+set multiple-cursors "Not working?
+set commentary "ok
+set textobj-entire
+set vim-paragraph-motion
+"To check
+"set ReplaceWithRegister
+"set exchange
+"set vim-indent-object
+
+""" Other settings
+set showmode
+set ideajoin
+set ideastatusicon=gray
+
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set clipboard+=unnamedplus
+
+set scrolloff=5
+set incsearch
+set undofile=true
+
+""" Keybindings
+map Q gq
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>s <Action>(SelectInProjectView)
+map <leader>e <Action>(GotoNextError)
+map <leader>E <Action>(GotoPreviousError)
+map <leader>fc <Action>(ReformatCode)
+map <leader>fs <Action>(FileStructurePopup)
+""" To Test
+let g:multi_cursor_start_word_key = "<C-n>"
+sethandler <C-n> a:vim
+map <C-n> <Action>(EditorDown)
+map <C-p> <Action>(EditorUp)
+
+""" Rider specific
+map <leader>ur <Action>(RiderUnitTestRunContextAction)
+map <leader>ud <Action>(RiderUnitTestDebugContextAction)
+
+""" Conflicting keys
+" sethandler <C-c> v:ide i-n:vim
+" sethandler <C-v> i:ide n-v:vim
+
+
+
+" Cyberwizard.io ultimate ideavim setup
+" Check more later at https://www.cyberwizard.io/posts/the-ultimate-ideavim-setup/
+set sneak
+set which-key "Don`t forget to install the plugin
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>
+set notimeout
+
+" let g:WhichKeyDesc_display = "<leader>d Display options"
+" let g:WhichKeyDesc_zen_mode = "<leader>dz Toggle Zen mode"
+" let g:WhichKeyDesc_df_mode = "<leader>dd Toggle Distraction-Free mode"
+" let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
